@@ -1,0 +1,17 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:\Users\Diego\Documents\Universidad\2024 - 1\config-services
+  security:
+    user:
+      name: ${CONFIG_NAME}
+      password: ${CONFIG_PASSWORD}
+
+
+
